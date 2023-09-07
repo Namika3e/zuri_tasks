@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 
-app.get("/get_data", (req, res) => {
+app.get("/api", (req, res) => {
   const slackName = req.query.slack_name;
   const track = req.query.track;
   const daysOfTheWeek = [
