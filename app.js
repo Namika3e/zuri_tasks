@@ -18,7 +18,7 @@ app.get("/api", (req, res) => {
   const current_day_num = now.getDay();
 
   const currentDay = daysOfTheWeek[current_day_num];
-  const current_utc_time = `${now.getUTCHours()}:${now.getUTCMinutes()}:${now.getUTCSeconds()}`
+  const current_utc_time = now.toISOString();
 ;
   const githubFileUrl = "https://github.com/Namika3e/zuri_tasks/blob/main/app.js";
   const githubRepoUrl = "https://github.com/Namika3e/zuri_tasks";
